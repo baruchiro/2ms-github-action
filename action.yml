@@ -1,0 +1,19 @@
+name: '2ms Action'
+description: 'Downloads and runs the Checkmarx/2ms tool on a cloned repository, and publishes the output as SARIF.'
+author: 'Checkmarx'
+inputs:
+  repo-path:
+    description: 'The path of the cloned repository.'
+    required: false
+    default: '.'
+runs:
+  using: 'composite'
+  steps:
+  - name: Download Checkmarx/2ms
+    run: |
+      curl -sL https://github.com/Checkmarx/2ms/releases/latest/download/2ms
+      chmod +x 2ms
+
+  - name: Run Checkmarx/2ms
+    run: |
+      ./2ms git .

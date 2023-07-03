@@ -34,7 +34,7 @@ runs:
     shell: bash
     # TODO: use inputs
     run: |
-      ./2ms git . --output-file results.json
+      ./2ms git . --report-path results.json
   
   - name: annotate
     if: ${{ failure() }}

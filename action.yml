@@ -27,7 +27,7 @@ runs:
     if: ${{ steps.cache-2ms.outputs.cache-hit != 'true' }}
     shell: bash
     run: |
-      curl -sL https://github.com/Checkmarx/2ms/releases/latest/download/2ms
+      curl -sL https://github.com/Checkmarx/2ms/releases/latest/download/2ms -o 2ms
       chmod +x 2ms
 
   - name: Run Checkmarx/2ms

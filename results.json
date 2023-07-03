@@ -1,0 +1,138 @@
+{
+  "totalItemsScanned": 357,
+  "totalSecretsFound": 11,
+  "results": {
+    "1e68cf841873862527a00ee5ef8d7957e319b6bc": [
+      {
+        "id": "1e68cf841873862527a00ee5ef8d7957e319b6bc",
+        "source": "git show 07aab5bb214c03fd9e75e46cebe2b407c88d4f73:reporting/report_test.go",
+        "ruleId": "private-key",
+        "startLine": 1,
+        "endLine": 15,
+        "startColumn": 2,
+        "endColumn": 29,
+        "value": "-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQCKLwIHewTIhcpH3WLnxZ61xBAk2lnkdahFxjHYi+khrENzbGr8\nEeJDZ1FMUDDYGeLtjlROLHT41ovicFbsmgIU0QQVFewIAwvKIw5hBtq0TtO9CsXe\nBaNmzw8ZduXJ/clOpdOF7/1ro485a+v956ZAhB2ohbk6qRqGyg3kaxclOQIDAQAB\nAoGAV7z5QN6vbtLkWTUMc7VazHas+Xla0mCSc5sgUyqi4CqMuWEBnQON8tZLHHVe\nThhBqixRA0HfE5DGSQSjbJ9s6fD+Sjt0Qj2yer70FuEiR0uGM4tOAE7WbX+Ny7PT\ngmDiWOITe7v0yzIgZzbLgPhg5SlCmiy8Nv2Zf/v54yLVPLECQQDbwpsuu6beMDip\nkRB/msCAEEAstdfSPY8L9QySYxskkJvtWpWBu5trnRatiGoLYWvnsBzcL4xWGrs8\nTpr4hTirAkEAoPiRDHrVbkKAgrmLW/TrSDiOG8uXSTuvz4iFgzCG6Cd8bp7mDKhJ\nl98Upelf0Is5sEnLDqnFl62LZAyckeThqwJAOjZChQ6QFSsQ11nl1OdZNpMXbMB+\neuJzkedHfT9jYTwtEaJ9F/BqKwdhinYoIPudabHs8yZlNim+jysDQfGIIQJAGqlx\nJPcHeO7M6FohKgcEHX84koQDN98J/L7pFlSoU7WOl6f8BKavIdeSTPS9qQYWdQuT\n9YbLMpdNGjI4kLWvZwJAJt8Qnbc2ZfS0ianwphoOdB0EwOMKNygjnYx7VoqR9/h1\n4Xgur9w/aLZrLM3DSatR+kL+cVTyDTtgCt9Dc8k48Q==\n-----END RSA PRIVATE KEY----"
+      }
+    ],
+    "1e91946c309871bf0bc6f3c849f7b3b4c4d1991f": [
+      {
+        "id": "1e91946c309871bf0bc6f3c849f7b3b4c4d1991f",
+        "source": "git show feb9b3aea00268512cffd0ae285ad9251a7bd208:main.go",
+        "ruleId": "private-key",
+        "startLine": 11,
+        "endLine": 25,
+        "startColumn": 2,
+        "endColumn": 29,
+        "value": "-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQCKLwIHewTIhcpH3WLnxZ61xBAk2lnkdahFxjHYi+khrENzbGr8\nEeJDZ1FMUDDYGeLtjlROLHT41ovicFbsmgIU0QQVFewIAwvKIw5hBtq0TtO9CsXe\nBaNmzw8ZduXJ/clOpdOF7/1ro485a+v956ZAhB2ohbk6qRqGyg3kaxclOQIDAQAB\nAoGAV7z5QN6vbtLkWTUMc7VazHas+Xla0mCSc5sgUyqi4CqMuWEBnQON8tZLHHVe\nThhBqixRA0HfE5DGSQSjbJ9s6fD+Sjt0Qj2yer70FuEiR0uGM4tOAE7WbX+Ny7PT\ngmDiWOITe7v0yzIgZzbLgPhg5SlCmiy8Nv2Zf/v54yLVPLECQQDbwpsuu6beMDip\nkRB/msCAEEAstdfSPY8L9QySYxskkJvtWpWBu5trnRatiGoLYWvnsBzcL4xWGrs8\nTpr4hTirAkEAoPiRDHrVbkKAgrmLW/TrSDiOG8uXSTuvz4iFgzCG6Cd8bp7mDKhJ\nl98Upelf0Is5sEnLDqnFl62LZAyckeThqwJAOjZChQ6QFSsQ11nl1OdZNpMXbMB+\neuJzkedHfT9jYTwtEaJ9F/BqKwdhinYoIPudabHs8yZlNim+jysDQfGIIQJAGqlx\nJPcHeO7M6FohKgcEHX84koQDN98J/L7pFlSoU7WOl6f8BKavIdeSTPS9qQYWdQuT\n9YbLMpdNGjI4kLWvZwJAJt8Qnbc2ZfS0ianwphoOdB0EwOMKNygjnYx7VoqR9/h1\n4Xgur9w/aLZrLM3DSatR+kL+cVTyDTtgCt9Dc8k48Q==\n-----END RSA PRIVATE KEY----"
+      }
+    ],
+    "4b4d5633abd9ec26c7cee715a723089fba53c8dc": [
+      {
+        "id": "4b4d5633abd9ec26c7cee715a723089fba53c8dc",
+        "source": "git show 797f277509117a61b81eb97e1c6f509b5addf0c2:testdata/example.py",
+        "ruleId": "generic-api-key",
+        "startLine": 4,
+        "endLine": 4,
+        "startColumn": 10,
+        "endColumn": 57,
+        "value": "0123456789abcdefghijklmnopqrstuvwxyz"
+      }
+    ],
+    "4d358e6dd9e2f21c647dad571f13dde3fd77d107": [
+      {
+        "id": "4d358e6dd9e2f21c647dad571f13dde3fd77d107",
+        "source": "git show 2aa7733a457a145725aa11f99f05f60ddc6b09a1:reporting/report_test.go",
+        "ruleId": "private-key",
+        "startLine": 8,
+        "endLine": 8,
+        "startColumn": 19,
+        "endColumn": 917,
+        "value": "-----BEGIN RSA PRIVATE KEY-----\\nMIICWwIBAAKBgQCKLwIHewTIhcpH3WLnxZ61xBAk2lnkdahFxjHYi+khrENzbGr8\\nEeJDZ1FMUDDYGeLtjlROLHT41ovicFbsmgIU0QQVFewIAwvKIw5hBtq0TtO9CsXe\\nBaNmzw8ZduXJ/clOpdOF7/1ro485a+v956ZAhB2ohbk6qRqGyg3kaxclOQIDAQAB\\nAoGAV7z5QN6vbtLkWTUMc7VazHas+Xla0mCSc5sgUyqi4CqMuWEBnQON8tZLHHVe\\nThhBqixRA0HfE5DGSQSjbJ9s6fD+Sjt0Qj2yer70FuEiR0uGM4tOAE7WbX+Ny7PT\\ngmDiWOITe7v0yzIgZzbLgPhg5SlCmiy8Nv2Zf/v54yLVPLECQQDbwpsuu6beMDip\\nkRB/msCAEEAstdfSPY8L9QySYxskkJvtWpWBu5trnRatiGoLYWvnsBzcL4xWGrs8\\nTpr4hTirAkEAoPiRDHrVbkKAgrmLW/TrSDiOG8uXSTuvz4iFgzCG6Cd8bp7mDKhJ\\nl98Upelf0Is5sEnLDqnFl62LZAyckeThqwJAOjZChQ6QFSsQ11nl1OdZNpMXbMB+\\neuJzkedHfT9jYTwtEaJ9F/BqKwdhinYoIPudabHs8yZlNim+jysDQfGIIQJAGqlx\\nJPcHeO7M6FohKgcEHX84koQDN98J/L7pFlSoU7WOl6f8BKavIdeSTPS9qQYWdQuT\\n9YbLMpdNGjI4kLWvZwJAJt8Qnbc2ZfS0ianwphoOdB0EwOMKNygjnYx7VoqR9/h1\\n4Xgur9w/aLZrLM3DSatR+kL+cVTyDTtgCt9Dc8k48Q==\\n-----END RSA PRIVATE KEY----"
+      }
+    ],
+    "5a8a11ed696057c1214c88cfc48b47ca046641ca": [
+      {
+        "id": "5a8a11ed696057c1214c88cfc48b47ca046641ca",
+        "source": "git show ee430dfdbc507278efa290945296f555b2d65a2c:Reporting/Report_test.go",
+        "ruleId": "private-key",
+        "startLine": 8,
+        "endLine": 8,
+        "startColumn": 19,
+        "endColumn": 917,
+        "value": "-----BEGIN RSA PRIVATE KEY-----\\nMIICWwIBAAKBgQCKLwIHewTIhcpH3WLnxZ61xBAk2lnkdahFxjHYi+khrENzbGr8\\nEeJDZ1FMUDDYGeLtjlROLHT41ovicFbsmgIU0QQVFewIAwvKIw5hBtq0TtO9CsXe\\nBaNmzw8ZduXJ/clOpdOF7/1ro485a+v956ZAhB2ohbk6qRqGyg3kaxclOQIDAQAB\\nAoGAV7z5QN6vbtLkWTUMc7VazHas+Xla0mCSc5sgUyqi4CqMuWEBnQON8tZLHHVe\\nThhBqixRA0HfE5DGSQSjbJ9s6fD+Sjt0Qj2yer70FuEiR0uGM4tOAE7WbX+Ny7PT\\ngmDiWOITe7v0yzIgZzbLgPhg5SlCmiy8Nv2Zf/v54yLVPLECQQDbwpsuu6beMDip\\nkRB/msCAEEAstdfSPY8L9QySYxskkJvtWpWBu5trnRatiGoLYWvnsBzcL4xWGrs8\\nTpr4hTirAkEAoPiRDHrVbkKAgrmLW/TrSDiOG8uXSTuvz4iFgzCG6Cd8bp7mDKhJ\\nl98Upelf0Is5sEnLDqnFl62LZAyckeThqwJAOjZChQ6QFSsQ11nl1OdZNpMXbMB+\\neuJzkedHfT9jYTwtEaJ9F/BqKwdhinYoIPudabHs8yZlNim+jysDQfGIIQJAGqlx\\nJPcHeO7M6FohKgcEHX84koQDN98J/L7pFlSoU7WOl6f8BKavIdeSTPS9qQYWdQuT\\n9YbLMpdNGjI4kLWvZwJAJt8Qnbc2ZfS0ianwphoOdB0EwOMKNygjnYx7VoqR9/h1\\n4Xgur9w/aLZrLM3DSatR+kL+cVTyDTtgCt9Dc8k48Q==\\n-----END RSA PRIVATE KEY----"
+      }
+    ],
+    "72a484786b7b3bc00b89df85c7d5f32169d97494": [
+      {
+        "id": "72a484786b7b3bc00b89df85c7d5f32169d97494",
+        "source": "git show a7595c65aa08f36d9897ed2f09e22b628b77819e:secrets/secrets_test.go",
+        "ruleId": "private-key",
+        "startLine": 22,
+        "endLine": 131,
+        "startColumn": 15,
+        "endColumn": 913,
+        "value": "-----BEGIN RSA PRIVATE KEY-----\\nMIICWwIBAAKBgQCKLwIHewTIhcpH3WLnxZ61xBAk2lnkdahFxjHYi+khrENzbGr8\\nEeJDZ1FMUDDYGeLtjlROLHT41ovicFbsmgIU0QQVFewIAwvKIw5hBtq0TtO9CsXe\\nBaNmzw8ZduXJ/clOpdOF7/1ro485a+v956ZAhB2ohbk6qRqGyg3kaxclOQIDAQAB\\nAoGAV7z5QN6vbtLkWTUMc7VazHas+Xla0mCSc5sgUyqi4CqMuWEBnQON8tZLHHVe\\nThhBqixRA0HfE5DGSQSjbJ9s6fD+Sjt0Qj2yer70FuEiR0uGM4tOAE7WbX+Ny7PT\\ngmDiWOITe7v0yzIgZzbLgPhg5SlCmiy8Nv2Zf/v54yLVPLECQQDbwpsuu6beMDip\\nkRB/msCAEEAstdfSPY8L9QySYxskkJvtWpWBu5trnRatiGoLYWvnsBzcL4xWGrs8\\nTpr4hTirAkEAoPiRDHrVbkKAgrmLW/TrSDiOG8uXSTuvz4iFgzCG6Cd8bp7mDKhJ\\nl98Upelf0Is5sEnLDqnFl62LZAyckeThqwJAOjZChQ6QFSsQ11nl1OdZNpMXbMB+\\neuJzkedHfT9jYTwtEaJ9F/BqKwdhinYoIPudabHs8yZlNim+jysDQfGIIQJAGqlx\\nJPcHeO7M6FohKgcEHX84koQDN98J/L7pFlSoU7WOl6f8BKavIdeSTPS9qQYWdQuT\\n9YbLMpdNGjI4kLWvZwJAJt8Qnbc2ZfS0ianwphoOdB0EwOMKNygjnYx7VoqR9/h1\\n4Xgur9w/aLZrLM3DSatR+kL+cVTyDTtgCt9Dc8k48Q==\\n-----END RSA PRIVATE KEY-----\",\n\t\t\tSource:  \"https://secrets-inside.atlassian.net/wiki/rest/api/content/262424?expand=body.storage.value,version,history.previousVersion\",\n\t\t},\n\t\t{\n\t\t\tID:      \"https://secrets-inside.atlassian.net/wiki/spaces/S1/pages/262424\",\n\t\t\tContent: \"-----BEGIN RSA PRIVATE KEY-----\\nOLD_SECRETKBgQCKLwIHewTIhcpH3WLnxZ61xBAk2lnkdahFxjHYi+khrENzbGr8\\nEeJDZ1FMUDDYGeLtjlROLHT41ovicFbsmgIU0QQVFewIAwvKIw5hBtq0TtO9CsXe\\nBaNmzw8ZduXJ/clOpdOF7/1ro485a+v956ZAhB2ohbk6qRqGyg3kaxclOQIDAQAB\\nAoGAV7z5QN6vbtLkWTUMc7VazHas+Xla0mCSc5sgUyqi4CqMuWEBnQON8tZLHHVe\\nThhBqixRA0HfE5DGSQSjbJ9s6fD+Sjt0Qj2yer70FuEiR0uGM4tOAE7WbX+Ny7PT\\ngmDiWOITe7v0yzIgZzbLgPhg5SlCmiy8Nv2Zf/v54yLVPLECQQDbwpsuu6beMDip\\nkRB/msCAEEAstdfSPY8L9QySYxskkJvtWpWBu5trnRatiGoLYWvnsBzcL4xWGrs8\\nTpr4hTirAkEAoPiRDHrVbkKAgrmLW/TrSDiOG8uXSTuvz4iFgzCG6Cd8bp7mDKhJ\\nl98Upelf0Is5sEnLDqnFl62LZAyckeThqwJAOjZChQ6QFSsQ11nl1OdZNpMXbMB+\\neuJzkedHfT9jYTwtEaJ9F/BqKwdhinYoIPudabHs8yZlNim+jysDQfGIIQJAGqlx\\nJPcHeO7M6FohKgcEHX84koQDN98J/L7pFlSoU7WOl6f8BKavIdeSTPS9qQYWdQuT\\n9YbLMpdNGjI4kLWvZwJAJt8Qnbc2ZfS0ianwphoOdB0EwOMKNygjnYx7VoqR9/h1\\n4Xgur9w/aLZrLM3DSatR+kL+cVTyDTtgCt9Dc8k48Q==\\n-----END RSA PRIVATE KEY-----\",\n\t\t\tSource:  \"https://secrets-inside.atlassian.net/wiki/rest/api/content/262424?expand=body.storage.value,version,history.previousVersion\",\n\t\t},\n\t}\n\n\tfor _, item := range items {\n\t\twg.Add(1)\n\t\tgo secrets.Detect(secretsChannel, item, \u0026wg)\n\t}\n\n\tgo func() {\n\t\tfor {\n\t\t\tselect {\n\t\t\tcase secret := \u003c-secretsChannel:\n\t\t\t\treport.TotalSecretsFound++\n\t\t\t\treport.Results[secret.ID] = append(report.Results[secret.ID], secret)\n\t\t\tcase err, ok := \u003c-errorsChannel:\n\t\t\t\tif !ok {\n\t\t\t\t\tbreak\n\t\t\t\t}\n\t\t\t\terror = err\n\t\t\t}\n\t\t}\n\t}()\n\twg.Wait()\n\ttime.Sleep(time.Millisecond * timeSleepInterval)\n\n\trequire.NoError(t, error)\n\trequire.Equal(t, report.TotalSecretsFound, 2)\n\trequire.Equal(t, len(report.Results), 1)\n}\n\nfunc TestWrapper_Detect2(t *testing.T) {\n\ttags := []string{\"all\"}\n\tsecrets := Init(tags)\n\n\treport := reporting.Report{}\n\treport.Results = make(map[string][]reporting.Secret)\n\n\tvar secretsChannel = make(chan reporting.Secret)\n\tvar errorsChannel = make(chan error)\n\tvar wg sync.WaitGroup\n\tvar error error\n\n\titems := []plugins.Item{\n\t\t{\n\t\t\tID:      \"https://secrets-inside.atlassian.net/wiki/spaces/S1/pages/262424\",\n\t\t\tContent: \"-----BEGIN RSA PRIVATE KEY-----\\nMIICWwIBAAKBgQCKLwIHewTIhcpH3WLnxZ61xBAk2lnkdahFxjHYi+khrENzbGr8\\nEeJDZ1FMUDDYGeLtjlROLHT41ovicFbsmgIU0QQVFewIAwvKIw5hBtq0TtO9CsXe\\nBaNmzw8ZduXJ/clOpdOF7/1ro485a+v956ZAhB2ohbk6qRqGyg3kaxclOQIDAQAB\\nAoGAV7z5QN6vbtLkWTUMc7VazHas+Xla0mCSc5sgUyqi4CqMuWEBnQON8tZLHHVe\\nThhBqixRA0HfE5DGSQSjbJ9s6fD+Sjt0Qj2yer70FuEiR0uGM4tOAE7WbX+Ny7PT\\ngmDiWOITe7v0yzIgZzbLgPhg5SlCmiy8Nv2Zf/v54yLVPLECQQDbwpsuu6beMDip\\nkRB/msCAEEAstdfSPY8L9QySYxskkJvtWpWBu5trnRatiGoLYWvnsBzcL4xWGrs8\\nTpr4hTirAkEAoPiRDHrVbkKAgrmLW/TrSDiOG8uXSTuvz4iFgzCG6Cd8bp7mDKhJ\\nl98Upelf0Is5sEnLDqnFl62LZAyckeThqwJAOjZChQ6QFSsQ11nl1OdZNpMXbMB+\\neuJzkedHfT9jYTwtEaJ9F/BqKwdhinYoIPudabHs8yZlNim+jysDQfGIIQJAGqlx\\nJPcHeO7M6FohKgcEHX84koQDN98J/L7pFlSoU7WOl6f8BKavIdeSTPS9qQYWdQuT\\n9YbLMpdNGjI4kLWvZwJAJt8Qnbc2ZfS0ianwphoOdB0EwOMKNygjnYx7VoqR9/h1\\n4Xgur9w/aLZrLM3DSatR+kL+cVTyDTtgCt9Dc8k48Q==\\n-----END RSA PRIVATE KEY-----\",\n\t\t\tSource:  \"https://secrets-inside.atlassian.net/wiki/rest/api/content/262424?expand=body.storage.value,version,history.previousVersion\",\n\t\t},\n\t\t{\n\t\t\tID:      \"https://secrets-inside.atlassian.net/wiki/spaces/S1/pages/262425\",\n\t\t\tContent: \"-----BEGIN RSA PRIVATE KEY-----\\nOLD_SECRETKBgQCKLwIHewTIhcpH3WLnxZ61xBAk2lnkdahFxjHYi+khrENzbGr8\\nEeJDZ1FMUDDYGeLtjlROLHT41ovicFbsmgIU0QQVFewIAwvKIw5hBtq0TtO9CsXe\\nBaNmzw8ZduXJ/clOpdOF7/1ro485a+v956ZAhB2ohbk6qRqGyg3kaxclOQIDAQAB\\nAoGAV7z5QN6vbtLkWTUMc7VazHas+Xla0mCSc5sgUyqi4CqMuWEBnQON8tZLHHVe\\nThhBqixRA0HfE5DGSQSjbJ9s6fD+Sjt0Qj2yer70FuEiR0uGM4tOAE7WbX+Ny7PT\\ngmDiWOITe7v0yzIgZzbLgPhg5SlCmiy8Nv2Zf/v54yLVPLECQQDbwpsuu6beMDip\\nkRB/msCAEEAstdfSPY8L9QySYxskkJvtWpWBu5trnRatiGoLYWvnsBzcL4xWGrs8\\nTpr4hTirAkEAoPiRDHrVbkKAgrmLW/TrSDiOG8uXSTuvz4iFgzCG6Cd8bp7mDKhJ\\nl98Upelf0Is5sEnLDqnFl62LZAyckeThqwJAOjZChQ6QFSsQ11nl1OdZNpMXbMB+\\neuJzkedHfT9jYTwtEaJ9F/BqKwdhinYoIPudabHs8yZlNim+jysDQfGIIQJAGqlx\\nJPcHeO7M6FohKgcEHX84koQDN98J/L7pFlSoU7WOl6f8BKavIdeSTPS9qQYWdQuT\\n9YbLMpdNGjI4kLWvZwJAJt8Qnbc2ZfS0ianwphoOdB0EwOMKNygjnYx7VoqR9/h1\\n4Xgur9w/aLZrLM3DSatR+kL+cVTyDTtgCt9Dc8k48Q==\\n-----END RSA PRIVATE KEY-----\",\n\t\t\tSource:  \"https://secrets-inside.atlassian.net/wiki/rest/api/content/262425?expand=body.storage.value,version,history.previousVersion\",\n\t\t},\n\t}\n\n\tfor _, item := range items {\n\t\twg.Add(1)\n\t\tgo secrets.Detect(secretsChannel, item, \u0026wg)\n\t}\n\n\tgo func() {\n\t\tfor {\n\t\t\tselect {\n\t\t\tcase secret := \u003c-secretsChannel:\n\t\t\t\treport.TotalSecretsFound++\n\t\t\t\treport.Results[secret.ID] = append(report.Results[secret.ID], secret)\n\t\t\tcase err, ok := \u003c-errorsChannel:\n\t\t\t\tif !ok {\n\t\t\t\t\tbreak\n\t\t\t\t}\n\t\t\t\terror = err\n\t\t\t}\n\t\t}\n\t}()\n\twg.Wait()\n\ttime.Sleep(time.Millisecond * timeSleepInterval)\n\n\trequire.NoError(t, error)\n\trequire.Equal(t, report.TotalSecretsFound, 2)\n\trequire.Equal(t, len(report.Results), 2)\n}\n\nfunc BenchmarkWrapper_RunScans(b *testing.B) {\n\ttags := []string{\"all\"}\n\tsecrets := Init(tags)\n\n\treport := reporting.Report{}\n\treport.Results = make(map[string][]reporting.Secret)\n\n\tvar secretsChannel = make(chan reporting.Secret)\n\tvar errorsChannel = make(chan error)\n\tvar wg sync.WaitGroup\n\tvar error error\n\n\titems := []plugins.Item{\n\t\t{\n\t\t\tID:      \"https://secrets-inside.atlassian.net/wiki/spaces/S1/pages/262424\",\n\t\t\tContent: \"-----BEGIN RSA PRIVATE KEY-----\\nMIICWwIBAAKBgQCKLwIHewTIhcpH3WLnxZ61xBAk2lnkdahFxjHYi+khrENzbGr8\\nEeJDZ1FMUDDYGeLtjlROLHT41ovicFbsmgIU0QQVFewIAwvKIw5hBtq0TtO9CsXe\\nBaNmzw8ZduXJ/clOpdOF7/1ro485a+v956ZAhB2ohbk6qRqGyg3kaxclOQIDAQAB\\nAoGAV7z5QN6vbtLkWTUMc7VazHas+Xla0mCSc5sgUyqi4CqMuWEBnQON8tZLHHVe\\nThhBqixRA0HfE5DGSQSjbJ9s6fD+Sjt0Qj2yer70FuEiR0uGM4tOAE7WbX+Ny7PT\\ngmDiWOITe7v0yzIgZzbLgPhg5SlCmiy8Nv2Zf/v54yLVPLECQQDbwpsuu6beMDip\\nkRB/msCAEEAstdfSPY8L9QySYxskkJvtWpWBu5trnRatiGoLYWvnsBzcL4xWGrs8\\nTpr4hTirAkEAoPiRDHrVbkKAgrmLW/TrSDiOG8uXSTuvz4iFgzCG6Cd8bp7mDKhJ\\nl98Upelf0Is5sEnLDqnFl62LZAyckeThqwJAOjZChQ6QFSsQ11nl1OdZNpMXbMB+\\neuJzkedHfT9jYTwtEaJ9F/BqKwdhinYoIPudabHs8yZlNim+jysDQfGIIQJAGqlx\\nJPcHeO7M6FohKgcEHX84koQDN98J/L7pFlSoU7WOl6f8BKavIdeSTPS9qQYWdQuT\\n9YbLMpdNGjI4kLWvZwJAJt8Qnbc2ZfS0ianwphoOdB0EwOMKNygjnYx7VoqR9/h1\\n4Xgur9w/aLZrLM3DSatR+kL+cVTyDTtgCt9Dc8k48Q==\\n-----END RSA PRIVATE KEY-----\",\n\t\t\tSource:  \"https://secrets-inside.atlassian.net/wiki/rest/api/content/262424?expand=body.storage.value,version,history.previousVersion\",\n\t\t},\n\t\t{\n\t\t\tID:      \"https://secrets-inside.atlassian.net/wiki/spaces/S1/pages/262424\",\n\t\t\tContent: \"-----BEGIN RSA PRIVATE KEY-----\\nOLD_SECRETKBgQCKLwIHewTIhcpH3WLnxZ61xBAk2lnkdahFxjHYi+khrENzbGr8\\nEeJDZ1FMUDDYGeLtjlROLHT41ovicFbsmgIU0QQVFewIAwvKIw5hBtq0TtO9CsXe\\nBaNmzw8ZduXJ/clOpdOF7/1ro485a+v956ZAhB2ohbk6qRqGyg3kaxclOQIDAQAB\\nAoGAV7z5QN6vbtLkWTUMc7VazHas+Xla0mCSc5sgUyqi4CqMuWEBnQON8tZLHHVe\\nThhBqixRA0HfE5DGSQSjbJ9s6fD+Sjt0Qj2yer70FuEiR0uGM4tOAE7WbX+Ny7PT\\ngmDiWOITe7v0yzIgZzbLgPhg5SlCmiy8Nv2Zf/v54yLVPLECQQDbwpsuu6beMDip\\nkRB/msCAEEAstdfSPY8L9QySYxskkJvtWpWBu5trnRatiGoLYWvnsBzcL4xWGrs8\\nTpr4hTirAkEAoPiRDHrVbkKAgrmLW/TrSDiOG8uXSTuvz4iFgzCG6Cd8bp7mDKhJ\\nl98Upelf0Is5sEnLDqnFl62LZAyckeThqwJAOjZChQ6QFSsQ11nl1OdZNpMXbMB+\\neuJzkedHfT9jYTwtEaJ9F/BqKwdhinYoIPudabHs8yZlNim+jysDQfGIIQJAGqlx\\nJPcHeO7M6FohKgcEHX84koQDN98J/L7pFlSoU7WOl6f8BKavIdeSTPS9qQYWdQuT\\n9YbLMpdNGjI4kLWvZwJAJt8Qnbc2ZfS0ianwphoOdB0EwOMKNygjnYx7VoqR9/h1\\n4Xgur9w/aLZrLM3DSatR+kL+cVTyDTtgCt9Dc8k48Q==\\n-----END RSA PRIVATE KEY----"
+      }
+    ],
+    "9bd9ceded8fe6fa6f40cbf823b607e1cae029d88": [
+      {
+        "id": "9bd9ceded8fe6fa6f40cbf823b607e1cae029d88",
+        "source": "git show 797f277509117a61b81eb97e1c6f509b5addf0c2:testdata/example.txt",
+        "ruleId": "private-key",
+        "startLine": 2,
+        "endLine": 2,
+        "startColumn": 3,
+        "endColumn": 0,
+        "value": "-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQCKLwIHewTIhcpH3WLnxZ61xBAk2lnkdahFxjHYi+khrENzbGr8\nEeJDZ1FMUDDYGeLtjlROLHT41ovicFbsmgIU0QQVFewIAwvKIw5hBtq0TtO9CsXe\nBaNmzw8ZduXJ/clOpdOF7/1ro485a+v956ZAhB2ohbk6qRqGyg3kaxclOQIDAQAB\nAoGAV7z5QN6vbtLkWTUMc7VazHas+Xla0mCSc5sgUyqi4CqMuWEBnQON8tZLHHVe\nThhBqixRA0HfE5DGSQSjbJ9s6fD+Sjt0Qj2yer70FuEiR0uGM4tOAE7WbX+Ny7PT\ngmDiWOITe7v0yzIgZzbLgPhg5SlCmiy8Nv2Zf/v54yLVPLECQQDbwpsuu6beMDip\nkRB/msCAEEAstdfSPY8L9QySYxskkJvtWpWBu5trnRatiGoLYWvnsBzcL4xWGrs8\nTpr4hTirAkEAoPiRDHrVbkKAgrmLW/TrSDiOG8uXSTuvz4iFgzCG6Cd8bp7mDKhJ\nl98Upelf0Is5sEnLDqnFl62LZAyckeThqwJAOjZChQ6QFSsQ11nl1OdZNpMXbMB+\neuJzkedHfT9jYTwtEaJ9F/BqKwdhinYoIPudabHs8yZlNim+jysDQfGIIQJAGqlx\nJPcHeO7M6FohKgcEHX84koQDN98J/L7pFlSoU7WOl6f8BKavIdeSTPS9qQYWdQuT\n9YbLMpdNGjI4kLWvZwJAJt8Qnbc2ZfS0ianwphoOdB0EwOMKNygjnYx7VoqR9/h1\n4Xgur9w/aLZrLM3DSatR+kL+cVTyDTtgCt9Dc8k48Q==\n-----END RSA PRIVATE KEY----"
+      }
+    ],
+    "adb011e2741b9098e78f79e513f12a4e2c1ac0c3": [
+      {
+        "id": "adb011e2741b9098e78f79e513f12a4e2c1ac0c3",
+        "source": "git show 89326904a0c1ff413749a3eab859c344daf280e0:Reporting/Report_test.go",
+        "ruleId": "private-key",
+        "startLine": 8,
+        "endLine": 23,
+        "startColumn": 19,
+        "endColumn": 917,
+        "value": "-----BEGIN RSA PRIVATE KEY-----\\nMIICWwIBAAKBgQCKLwIHewTIhcpH3WLnxZ61xBAk2lnkdahFxjHYi+khrENzbGr8\\nEeJDZ1FMUDDYGeLtjlROLHT41ovicFbsmgIU0QQVFewIAwvKIw5hBtq0TtO9CsXe\\nBaNmzw8ZduXJ/clOpdOF7/1ro485a+v956ZAhB2ohbk6qRqGyg3kaxclOQIDAQAB\\nAoGAV7z5QN6vbtLkWTUMc7VazHas+Xla0mCSc5sgUyqi4CqMuWEBnQON8tZLHHVe\\nThhBqixRA0HfE5DGSQSjbJ9s6fD+Sjt0Qj2yer70FuEiR0uGM4tOAE7WbX+Ny7PT\\ngmDiWOITe7v0yzIgZzbLgPhg5SlCmiy8Nv2Zf/v54yLVPLECQQDbwpsuu6beMDip\\nkRB/msCAEEAstdfSPY8L9QySYxskkJvtWpWBu5trnRatiGoLYWvnsBzcL4xWGrs8\\nTpr4hTirAkEAoPiRDHrVbkKAgrmLW/TrSDiOG8uXSTuvz4iFgzCG6Cd8bp7mDKhJ\\nl98Upelf0Is5sEnLDqnFl62LZAyckeThqwJAOjZChQ6QFSsQ11nl1OdZNpMXbMB+\\neuJzkedHfT9jYTwtEaJ9F/BqKwdhinYoIPudabHs8yZlNim+jysDQfGIIQJAGqlx\\nJPcHeO7M6FohKgcEHX84koQDN98J/L7pFlSoU7WOl6f8BKavIdeSTPS9qQYWdQuT\\n9YbLMpdNGjI4kLWvZwJAJt8Qnbc2ZfS0ianwphoOdB0EwOMKNygjnYx7VoqR9/h1\\n4Xgur9w/aLZrLM3DSatR+kL+cVTyDTtgCt9Dc8k48Q==\\n-----END RSA PRIVATE KEY-----\"\n\tresults := map[string][]Secret{}\n\treport := Report{results}\n\tsecret := Secret{Description: \"bla\", StartLine: 0, StartColumn: 0, EndLine: 0, EndColumn: 0, Value: secretValue}\n\tfilePath := \"directory\\\\rawStringAsFile.txt\"\n\n\tgot := AddSecretToFile(report, filePath, secret)\n\twant := report\n\n\tif !reflect.DeepEqual(got, want) {\n\t\tt.Errorf(\"got %q want %q\", got, want)\n\t}\n}\n\nfunc TestCreateNewResult(t *testing.T) {\n\tsecretValue := \"-----BEGIN RSA PRIVATE KEY-----\\nMIICWwIBAAKBgQCKLwIHewTIhcpH3WLnxZ61xBAk2lnkdahFxjHYi+khrENzbGr8\\nEeJDZ1FMUDDYGeLtjlROLHT41ovicFbsmgIU0QQVFewIAwvKIw5hBtq0TtO9CsXe\\nBaNmzw8ZduXJ/clOpdOF7/1ro485a+v956ZAhB2ohbk6qRqGyg3kaxclOQIDAQAB\\nAoGAV7z5QN6vbtLkWTUMc7VazHas+Xla0mCSc5sgUyqi4CqMuWEBnQON8tZLHHVe\\nThhBqixRA0HfE5DGSQSjbJ9s6fD+Sjt0Qj2yer70FuEiR0uGM4tOAE7WbX+Ny7PT\\ngmDiWOITe7v0yzIgZzbLgPhg5SlCmiy8Nv2Zf/v54yLVPLECQQDbwpsuu6beMDip\\nkRB/msCAEEAstdfSPY8L9QySYxskkJvtWpWBu5trnRatiGoLYWvnsBzcL4xWGrs8\\nTpr4hTirAkEAoPiRDHrVbkKAgrmLW/TrSDiOG8uXSTuvz4iFgzCG6Cd8bp7mDKhJ\\nl98Upelf0Is5sEnLDqnFl62LZAyckeThqwJAOjZChQ6QFSsQ11nl1OdZNpMXbMB+\\neuJzkedHfT9jYTwtEaJ9F/BqKwdhinYoIPudabHs8yZlNim+jysDQfGIIQJAGqlx\\nJPcHeO7M6FohKgcEHX84koQDN98J/L7pFlSoU7WOl6f8BKavIdeSTPS9qQYWdQuT\\n9YbLMpdNGjI4kLWvZwJAJt8Qnbc2ZfS0ianwphoOdB0EwOMKNygjnYx7VoqR9/h1\\n4Xgur9w/aLZrLM3DSatR+kL+cVTyDTtgCt9Dc8k48Q==\\n-----END RSA PRIVATE KEY----"
+      }
+    ],
+    "af20ee3d64e40ddbf713395040c69d6c9043e63a": [
+      {
+        "id": "af20ee3d64e40ddbf713395040c69d6c9043e63a",
+        "source": "git show 5eb081b8496d775cd346c6eed23aa4ea7fa6442d:main copy.go",
+        "ruleId": "private-key",
+        "startLine": 33,
+        "endLine": 47,
+        "startColumn": 3,
+        "endColumn": 30,
+        "value": "-----BEGIN RSA PRIVATE KEY-----\n\tMIICWwIBAAKBgQCKLwIHewTIhcpH3WLnxZ61xBAk2lnkdahFxjHYi+khrENzbGr8\n\tEeJDZ1FMUDDYGeLtjlROLHT41ovicFbsmgIU0QQVFewIAwvKIw5hBtq0TtO9CsXe\n\tBaNmzw8ZduXJ/clOpdOF7/1ro485a+v956ZAhB2ohbk6qRqGyg3kaxclOQIDAQAB\n\tAoGAV7z5QN6vbtLkWTUMc7VazHas+Xla0mCSc5sgUyqi4CqMuWEBnQON8tZLHHVe\n\tThhBqixRA0HfE5DGSQSjbJ9s6fD+Sjt0Qj2yer70FuEiR0uGM4tOAE7WbX+Ny7PT\n\tgmDiWOITe7v0yzIgZzbLgPhg5SlCmiy8Nv2Zf/v54yLVPLECQQDbwpsuu6beMDip\n\tkRB/msCAEEAstdfSPY8L9QySYxskkJvtWpWBu5trnRatiGoLYWvnsBzcL4xWGrs8\n\tTpr4hTirAkEAoPiRDHrVbkKAgrmLW/TrSDiOG8uXSTuvz4iFgzCG6Cd8bp7mDKhJ\n\tl98Upelf0Is5sEnLDqnFl62LZAyckeThqwJAOjZChQ6QFSsQ11nl1OdZNpMXbMB+\n\teuJzkedHfT9jYTwtEaJ9F/BqKwdhinYoIPudabHs8yZlNim+jysDQfGIIQJAGqlx\n\tJPcHeO7M6FohKgcEHX84koQDN98J/L7pFlSoU7WOl6f8BKavIdeSTPS9qQYWdQuT\n\t9YbLMpdNGjI4kLWvZwJAJt8Qnbc2ZfS0ianwphoOdB0EwOMKNygjnYx7VoqR9/h1\n\t4Xgur9w/aLZrLM3DSatR+kL+cVTyDTtgCt9Dc8k48Q==\n\t-----END RSA PRIVATE KEY----"
+      }
+    ],
+    "b4373552b4bdc48eca08e1f7740f58f61c0f5039": [
+      {
+        "id": "b4373552b4bdc48eca08e1f7740f58f61c0f5039",
+        "source": "git show e19470a1fb6feb9ad8e0ce32822eb67f80b7d1f5:reporting/report_test.go",
+        "ruleId": "private-key",
+        "startLine": 1,
+        "endLine": 15,
+        "startColumn": 2,
+        "endColumn": 29,
+        "value": "-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQCKLwIHewTIhcpH3WLnxZ61xBAk2lnkdahFxjHYi+khrENzbGr8\nEeJDZ1FMUDDYGeLtjlROLHT41ovicFbsmgIU0QQVFewIAwvKIw5hBtq0TtO9CsXe\nBaNmzw8ZduXJ/clOpdOF7/1ro485a+v956ZAhB2ohbk6qRqGyg3kaxclOQIDAQAB\nAoGAV7z5QN6vbtLkWTUMc7VazHas+Xla0mCSc5sgUyqi4CqMuWEBnQON8tZLHHVe\nThhBqixRA0HfE5DGSQSjbJ9s6fD+Sjt0Qj2yer70FuEiR0uGM4tOAE7WbX+Ny7PT\ngmDiWOITe7v0yzIgZzbLgPhg5SlCmiy8Nv2Zf/v54yLVPLECQQDbwpsuu6beMDip\nkRB/msCAEEAstdfSPY8L9QySYxskkJvtWpWBu5trnRatiGoLYWvnsBzcL4xWGrs8\nTpr4hTirAkEAoPiRDHrVbkKAgrmLW/TrSDiOG8uXSTuvz4iFgzCG6Cd8bp7mDKhJ\nl98Upelf0Is5sEnLDqnFl62LZAyckeThqwJAOjZChQ6QFSsQ11nl1OdZNpMXbMB+\neuJzkedHfT9jYTwtEaJ9F/BqKwdhinYoIPudabHs8yZlNim+jysDQfGIIQJAGqlx\nJPcHeO7M6FohKgcEHX84koQDN98J/L7pFlSoU7WOl6f8BKavIdeSTPS9qQYWdQuT\n9YbLMpdNGjI4kLWvZwJAJt8Qnbc2ZfS0ianwphoOdB0EwOMKNygjnYx7VoqR9/h1\n4Xgur9w/aLZrLM3DSatR+kL+cVTyDTtgCt9Dc8k48Q==\n-----END RSA PRIVATE KEY----"
+      }
+    ],
+    "e259118634c59a81de2eb609a0925a3ffbf09d75": [
+      {
+        "id": "e259118634c59a81de2eb609a0925a3ffbf09d75",
+        "source": "git show 5361b10b8efef866f4a2382772a732a1aedb6115:main.go",
+        "ruleId": "readme-api-token",
+        "startLine": 5,
+        "endLine": 6,
+        "startColumn": 2,
+        "endColumn": 1,
+        "value": "rdme_hdhehehehehehekjashdlkjedrtyfjaslfjdtyurhgowuhfjkasndlkythbsdfgetfde93"
+      }
+    ]
+  }
+}

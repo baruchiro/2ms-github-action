@@ -30,7 +30,7 @@ function extractAnnotations() {
 
 const annotations = extractAnnotations(results);
 annotations.forEach((annotation) => {
-  console.log(annotation);
+  console.log(`::warning title=${encodeURIComponent(`Secret found: ${annotation.description}`)},file=${annotation.file},line=${annotation.startLine},endLine=${annotation.endLine},col=${annotation.startColumn},endColumn=${annotation.endColumn}::${annotation.description}`);
   core.warning(annotation.description, {
     ...annotation,
     title: `Secret found: ${annotation.description}`,

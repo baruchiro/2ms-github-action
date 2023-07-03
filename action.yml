@@ -1,19 +1,38 @@
 name: '2ms Action'
-description: 'Downloads and runs the Checkmarx/2ms tool on a cloned repository, and publishes the output as SARIF.'
+description: 'Downloads and runs the Checkmarx/2ms tool on a cloned repository.'
 author: 'Checkmarx'
 inputs:
   repo-path:
     description: 'The path of the cloned repository.'
     required: false
     default: '.'
+    # TODO: Add global flags
 runs:
   using: 'composite'
   steps:
+  - uses: actions/setup-node@v3
+    with:
+      node-version: '18'
+      cache: 'yarn'
+  - run: yarn install --frozen-lockfile
+
+  - name: Cache Checkmarx/2ms
+    id: cache-2ms
+    uses: actions/cache@v3
+    with:
+      path: 2ms
+      key: 2ms-tool-${{ hashFiles('2ms') }}
   - name: Download Checkmarx/2ms
+    if: ${{ steps.cache-2ms.outputs.cache-hit != 'true' }}
     run: |
       curl -sL https://github.com/Checkmarx/2ms/releases/latest/download/2ms
       chmod +x 2ms
 
   - name: Run Checkmarx/2ms
     run: |
-      ./2ms git .
+    # TODO: use input
+      ./2ms git . --output-file results.json
+  
+  - name: annotate
+    if: ${{ failure() }}
+    run: node src/annotate.js results.json

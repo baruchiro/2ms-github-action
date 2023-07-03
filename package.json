@@ -1,0 +1,6 @@
+{
+  "name": "2ms-github-action",
+  "dependencies": {
+    "@actions/core": "^1.10.0"
+  }
+}

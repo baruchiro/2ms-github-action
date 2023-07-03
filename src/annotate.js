@@ -30,6 +30,7 @@ function extractAnnotations() {
 
 const annotations = extractAnnotations(results);
 annotations.forEach((annotation) => {
+  console.log(annotation);
   core.warning(annotation.description, {
     ...annotation,
     title: `Secret found: ${annotation.description}`,

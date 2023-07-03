@@ -32,8 +32,8 @@ runs:
 
   - name: Run Checkmarx/2ms
     shell: bash
+    # TODO: use inputs
     run: |
-    # TODO: use input
       ./2ms git . --output-file results.json
   
   - name: annotate

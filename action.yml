@@ -15,6 +15,7 @@ runs:
       node-version: '18'
       cache: 'yarn'
   - run: yarn install --frozen-lockfile
+    shell: bash
 
   - name: Cache Checkmarx/2ms
     id: cache-2ms
@@ -24,15 +25,18 @@ runs:
       key: 2ms-tool-${{ hashFiles('2ms') }}
   - name: Download Checkmarx/2ms
     if: ${{ steps.cache-2ms.outputs.cache-hit != 'true' }}
+    shell: bash
     run: |
       curl -sL https://github.com/Checkmarx/2ms/releases/latest/download/2ms
       chmod +x 2ms
 
   - name: Run Checkmarx/2ms
+    shell: bash
     run: |
     # TODO: use input
       ./2ms git . --output-file results.json
   
   - name: annotate
     if: ${{ failure() }}
+    shell: bash
     run: node src/annotate.js results.json

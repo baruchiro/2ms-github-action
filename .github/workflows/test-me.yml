@@ -1,0 +1,10 @@
+name: test me
+
+on: push
+
+jobs:
+  test_me:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3.5.3
+    - uses: ./

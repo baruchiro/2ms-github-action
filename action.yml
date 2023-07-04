@@ -38,9 +38,8 @@ runs:
 
   - name: Run Checkmarx/2ms
     shell: bash
-    # TODO: use inputs
     run: |
-      ./2ms git . --report-path results.json
+      ./2ms git ${{ inputs.repo-path }} --report-path results.json
   
   - name: annotate
     if: ${{ failure() }}

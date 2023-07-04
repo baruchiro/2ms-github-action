@@ -14,12 +14,10 @@ inputs:
   exclude-rules:
     description: 'Exclude rules by name or tag to apply to the scan (removes from list, starts from all).'
     required: false
-    default: []
 
   include-rules:
     description: 'Include rules by name or tag to apply to the scan (adds to list, starts from empty).'
     required: false
-    default: []
 
   log-level:
     description: 'Log level (trace, debug, info, warn, error, fatal).'
@@ -29,12 +27,11 @@ inputs:
   regexes:
     description: 'Custom regexes to apply to the scan, must be valid Go regex.'
     required: false
-    default: []
 
   report-paths:
     description: 'Path to generate report files. The output format will be determined by the file extension (.json, .yaml, .sarif).'
     required: false
-    default: []
+    default: 'results.json'
 
   stdout-format:
     description: 'Stdout output format, available formats are: json, yaml, sarif.'
@@ -54,24 +51,24 @@ runs:
       fi
 
       if ! [[ "${{ inputs.report-paths }}" =~ "results.json" ]]; then
-        REPORT_PATHS="${{ join(inputs.report-paths, ',') }},results.json"
+        REPORT_PATHS="${{ inputs.report-paths }},results.json"
       fi
 
-      command="--log-level ${inputs.log-level}"
+      command="--log-level ${{ inputs.log-level }}"
       if [ -n "${{ inputs.config }}" ]; then
         command+=" --config ${inputs.config}"
       fi
       if [ -n "${{ inputs.exclude-rules }}" ]; then
-        command+=" --exclude-rule ${{ join(inputs.exclude-rule, ',') }}"
+        command+=" --exclude-rule ${{ inputs.exclude-rule }}"
       fi
       if [ -n "${{ inputs.include-rules }}" ]; then
-        command+=" --include-rule ${{ join(inputs.include-rule, ',') }}"
+        command+=" --include-rule ${{ inputs.include-rule }}"
       fi
       if [ -n "${{ inputs.regexes }}" ]; then
-        command+=" --regex ${{ join(inputs.regex, ',') }}"
+        command+=" --regex ${{ inputs.regex }}"
       fi
       if [ -n "${{ inputs.report-paths }}" ]; then
-        command+=" --report-path ${{ join(inputs.report-paths, ',') }}"
+        command+=" --report-path ${{ inputs.report-paths }}"
       fi
       if [ -n "${{ inputs.stdout-format }}" ]; then
         command+=" --stdout-format ${{ inputs.stdout-format }}"

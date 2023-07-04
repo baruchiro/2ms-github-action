@@ -49,7 +49,6 @@ runs:
         echo "Error: exclude-rules and include-rules are mutually exclusive."
         exit 1
       fi
-
       if ! [[ "${{ inputs.report-paths }}" =~ "results.json" ]]; then
         REPORT_PATHS="${{ inputs.report-paths }},results.json"
       fi
@@ -65,7 +64,10 @@ runs:
         command+=" --include-rule ${{ inputs.include-rule }}"
       fi
       if [ -n "${{ inputs.regexes }}" ]; then
-        command+=" --regex ${{ inputs.regex }}"
+        IFS=',' read -ra regexes <<< "${inputs.regexes}"
+        for regex in "${regexes[@]}"; do
+          command+=" --regex ${regex}"
+        done
       fi
       if [ -n "${{ inputs.report-paths }}" ]; then
         command+=" --report-path ${{ inputs.report-paths }}"

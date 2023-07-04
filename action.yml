@@ -17,12 +17,18 @@ runs:
   - run: yarn install --frozen-lockfile
     shell: bash
 
+  - name: Get latest 2ms version
+    id: get-2ms-version
+    shell: bash
+    run: |
+      VERSION=$(curl --silent "https://api.github.com/repos/checkmarx-ts/2ms/releases/latest" | jq -r .tag_name)
+      echo "2MS_VERSION=${VERSION}" >> $GITHUB_OUTPUT
   - name: Cache Checkmarx/2ms
     id: cache-2ms
     uses: actions/cache@v3
     with:
       path: 2ms
-      key: 2ms-tool-${{ hashFiles('2ms') }}
+      key: 2ms-tool-${{ steps.get-2ms-version.outputs.2MS_VERSION }}
   - name: Download Checkmarx/2ms
     if: ${{ steps.cache-2ms.outputs.cache-hit != 'true' }}
     shell: bash

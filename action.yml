@@ -6,10 +6,79 @@ inputs:
     description: 'The path of the cloned repository.'
     required: false
     default: '.'
-    # TODO: Add global flags
+  
+  config:
+    description: 'Config file path.'
+    required: false
+
+  exclude-rules:
+    description: 'Exclude rules by name or tag to apply to the scan (removes from list, starts from all).'
+    required: false
+    default: []
+
+  include-rules:
+    description: 'Include rules by name or tag to apply to the scan (adds to list, starts from empty).'
+    required: false
+    default: []
+
+  log-level:
+    description: 'Log level (trace, debug, info, warn, error, fatal).'
+    required: false
+    default: 'info'
+
+  regexes:
+    description: 'Custom regexes to apply to the scan, must be valid Go regex.'
+    required: false
+    default: []
+
+  report-paths:
+    description: 'Path to generate report files. The output format will be determined by the file extension (.json, .yaml, .sarif).'
+    required: false
+    default: []
+
+  stdout-format:
+    description: 'Stdout output format, available formats are: json, yaml, sarif.'
+    required: false
+    default: 'yaml'
+
 runs:
   using: 'composite'
   steps:
+  - name: Build command line
+    id: build-command-line
+    shell: bash
+    run: |
+      if [ -n "${{ inputs.exclude-rules }}" ] && [ -n "${{ inputs.include-rules }}" ]; then
+        echo "Error: exclude-rules and include-rules are mutually exclusive."
+        exit 1
+      fi
+
+      if ! [[ "${{ inputs.report-paths }}" =~ "results.json" ]]; then
+        REPORT_PATHS="${{ join(inputs.report-paths, ',') }},results.json"
+      fi
+
+      command="--log-level ${inputs.log-level}"
+      if [ -n "${{ inputs.config }}" ]; then
+        command+=" --config ${inputs.config}"
+      fi
+      if [ -n "${{ inputs.exclude-rules }}" ]; then
+        command+=" --exclude-rule ${{ join(inputs.exclude-rule, ',') }}"
+      fi
+      if [ -n "${{ inputs.include-rules }}" ]; then
+        command+=" --include-rule ${{ join(inputs.include-rule, ',') }}"
+      fi
+      if [ -n "${{ inputs.regexes }}" ]; then
+        command+=" --regex ${{ join(inputs.regex, ',') }}"
+      fi
+      if [ -n "${{ inputs.report-paths }}" ]; then
+        command+=" --report-path ${{ join(inputs.report-paths, ',') }}"
+      fi
+      if [ -n "${{ inputs.stdout-format }}" ]; then
+        command+=" --stdout-format ${{ inputs.stdout-format }}"
+      fi
+
+      echo "COMMAND=${command}" >> "$GITHUB_OUTPUT"
+
   - uses: actions/setup-node@v3
     with:
       node-version: '18'
@@ -39,7 +108,7 @@ runs:
   - name: Run Checkmarx/2ms
     shell: bash
     run: |
-      ./2ms git ${{ inputs.repo-path }} --report-path results.json
+      ./2ms git ${{ inputs.repo-path }} ${{ steps.build-command-line.outputs.COMMAND }}
   
   - name: annotate
     if: ${{ failure() }}

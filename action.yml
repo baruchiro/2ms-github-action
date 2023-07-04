@@ -64,7 +64,7 @@ runs:
         command+=" --include-rule ${{ inputs.include-rule }}"
       fi
       if [ -n "${{ inputs.regexes }}" ]; then
-        IFS=',' read -ra regexes <<< "${inputs.regexes}"
+        IFS=',' read -ra regexes <<< "${{ inputs.regexes }}"
         for regex in "${regexes[@]}"; do
           command+=" --regex ${regex}"
         done

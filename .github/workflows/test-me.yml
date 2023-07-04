@@ -10,7 +10,7 @@ jobs:
     - uses: ./
       with:
         log-level: debug
-        exclude-rules: private_key
+        exclude-rules: private-key
         regexes: "eggs,spam"
         report-paths: "results.sarif"
     - name: Upload SARIF file

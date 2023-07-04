@@ -55,13 +55,13 @@ runs:
 
       command="--log-level ${{ inputs.log-level }}"
       if [ -n "${{ inputs.config }}" ]; then
-        command+=" --config ${inputs.config}"
+        command+=" --config ${{ inputs.config }}"
       fi
       if [ -n "${{ inputs.exclude-rules }}" ]; then
-        command+=" --exclude-rule ${{ inputs.exclude-rule }}"
+        command+=" --exclude-rule ${{ inputs.exclude-rules }}"
       fi
       if [ -n "${{ inputs.include-rules }}" ]; then
-        command+=" --include-rule ${{ inputs.include-rule }}"
+        command+=" --include-rule ${{ inputs.include-rules }}"
       fi
       if [ -n "${{ inputs.regexes }}" ]; then
         IFS=',' read -ra regexes <<< "${{ inputs.regexes }}"

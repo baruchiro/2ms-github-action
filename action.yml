@@ -39,77 +39,80 @@ inputs:
     default: 'yaml'
 
 runs:
-  using: 'composite'
-  steps:
-  - name: Build command line
-    id: build-command-line
-    shell: bash
-    run: |
-      if [ -n "${{ inputs.exclude-rules }}" ] && [ -n "${{ inputs.include-rules }}" ]; then
-        echo "Error: exclude-rules and include-rules are mutually exclusive."
-        exit 1
-      fi
-      if ! [[ "${{ inputs.report-paths }}" =~ "results.json" ]]; then
-        REPORT_PATHS="${{ inputs.report-paths }},results.json"
-      fi
+  using: 'node16'
+  main: src/index.js
+# runs:
+#   using: 'composite'
+#   steps:
+#   - name: Build command line
+#     id: build-command-line
+#     shell: bash
+#     run: |
+#       if [ -n "${{ inputs.exclude-rules }}" ] && [ -n "${{ inputs.include-rules }}" ]; then
+#         echo "Error: exclude-rules and include-rules are mutually exclusive."
+#         exit 1
+#       fi
+#       if ! [[ "${{ inputs.report-paths }}" =~ "results.json" ]]; then
+#         REPORT_PATHS="${{ inputs.report-paths }},results.json"
+#       fi
 
-      command="--log-level ${{ inputs.log-level }}"
-      if [ -n "${{ inputs.config }}" ]; then
-        command+=" --config ${{ inputs.config }}"
-      fi
-      if [ -n "${{ inputs.exclude-rules }}" ]; then
-        command+=" --exclude-rule ${{ inputs.exclude-rules }}"
-      fi
-      if [ -n "${{ inputs.include-rules }}" ]; then
-        command+=" --include-rule ${{ inputs.include-rules }}"
-      fi
-      if [ -n "${{ inputs.regexes }}" ]; then
-        IFS=',' read -ra regexes <<< "${{ inputs.regexes }}"
-        for regex in "${regexes[@]}"; do
-          command+=" --regex ${regex}"
-        done
-      fi
-      if [ -n "${{ inputs.report-paths }}" ]; then
-        command+=" --report-path ${{ inputs.report-paths }}"
-      fi
-      if [ -n "${{ inputs.stdout-format }}" ]; then
-        command+=" --stdout-format ${{ inputs.stdout-format }}"
-      fi
+#       command="--log-level ${{ inputs.log-level }}"
+#       if [ -n "${{ inputs.config }}" ]; then
+#         command+=" --config ${{ inputs.config }}"
+#       fi
+#       if [ -n "${{ inputs.exclude-rules }}" ]; then
+#         command+=" --exclude-rule ${{ inputs.exclude-rules }}"
+#       fi
+#       if [ -n "${{ inputs.include-rules }}" ]; then
+#         command+=" --include-rule ${{ inputs.include-rules }}"
+#       fi
+#       if [ -n "${{ inputs.regexes }}" ]; then
+#         IFS=',' read -ra regexes <<< "${{ inputs.regexes }}"
+#         for regex in "${regexes[@]}"; do
+#           command+=" --regex ${regex}"
+#         done
+#       fi
+#       if [ -n "${{ inputs.report-paths }}" ]; then
+#         command+=" --report-path ${{ inputs.report-paths }}"
+#       fi
+#       if [ -n "${{ inputs.stdout-format }}" ]; then
+#         command+=" --stdout-format ${{ inputs.stdout-format }}"
+#       fi
 
-      echo "COMMAND=${command}" >> "$GITHUB_OUTPUT"
+#       echo "COMMAND=${command}" >> "$GITHUB_OUTPUT"
 
-  - uses: actions/setup-node@v3
-    with:
-      node-version: '18'
-      cache: 'yarn'
-  - run: yarn install --frozen-lockfile
-    shell: bash
+#   - uses: actions/setup-node@v3
+#     with:
+#       node-version: '18'
+#       cache: 'yarn'
+#   - run: yarn install --frozen-lockfile
+#     shell: bash
 
-  - name: Get latest 2ms version
-    id: get-2ms-version
-    shell: bash
-    run: |
-      VERSION=$(curl --silent "https://api.github.com/repos/Checkmarx/2ms/releases/latest" | jq -r .tag_name)
-      echo "TMS_VERSION=${VERSION}" >> "$GITHUB_OUTPUT"
-  - name: Cache Checkmarx/2ms
-    id: cache-2ms
-    uses: actions/cache@v3
-    with:
-      path: 2ms
-      key: 2ms-tool-${{ steps.get-2ms-version.outputs.TMS_VERSION }}
-  - name: Download Checkmarx/2ms
-    if: ${{ steps.cache-2ms.outputs.cache-hit != 'true' }}
-    shell: bash
-    run: |
-      curl -sL https://github.com/Checkmarx/2ms/releases/latest/download/2ms -o 2ms
-      chmod +x 2ms
+#   - name: Get latest 2ms version
+#     id: get-2ms-version
+#     shell: bash
+#     run: |
+#       VERSION=$(curl --silent "https://api.github.com/repos/Checkmarx/2ms/releases/latest" | jq -r .tag_name)
+#       echo "TMS_VERSION=${VERSION}" >> "$GITHUB_OUTPUT"
+#   - name: Cache Checkmarx/2ms
+#     id: cache-2ms
+#     uses: actions/cache@v3
+#     with:
+#       path: 2ms
+#       key: 2ms-tool-${{ steps.get-2ms-version.outputs.TMS_VERSION }}
+#   - name: Download Checkmarx/2ms
+#     if: ${{ steps.cache-2ms.outputs.cache-hit != 'true' }}
+#     shell: bash
+#     run: |
+#       curl -sL https://github.com/Checkmarx/2ms/releases/latest/download/2ms -o 2ms
+#       chmod +x 2ms
 
-  - name: Run Checkmarx/2ms
-    shell: bash
-    run: |
-      ./2ms git ${{ inputs.repo-path }} ${{ steps.build-command-line.outputs.COMMAND }}
+#   - name: Run Checkmarx/2ms
+#     shell: bash
+#     run: |
+#       ./2ms git ${{ inputs.repo-path }} ${{ steps.build-command-line.outputs.COMMAND }}
   
-  - name: annotate
-    if: ${{ failure() }}
-    shell: bash
-    run: node src/annotate.js results.json
+#   - name: annotate
+#     if: ${{ failure() }}
+#     shell: bash
+#     run: node src/annotate.js results.json

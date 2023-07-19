@@ -1,5 +1,7 @@
 # 2ms Action
 
+push
+
 This Github Action downloads and runs the Checkmarx/2ms tool on a cloned repository, and publishes the output as SARIF.
 
 ## Inputs
